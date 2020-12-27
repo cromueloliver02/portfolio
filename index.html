@@ -15,19 +15,34 @@
 			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<title>Cromuel Barut</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-md fixed-top bg-light py-3">
+		<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light py-3">
 			<div class="container">
-				<div class="btn-switch-container ml-auto">
+				<!-- <div class="btn-switch-container ml-auto">
 					<i class="far fa-moon"></i>
-				</div>
+				</div> -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item ml-4">
+						<a href="#home" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item ml-4">
+						<a href="#background" class="nav-link">Background</a>
+					</li>
+					<li class="nav-item ml-4">
+						<a href="#skills" class="nav-link">Skills</a>
+					</li>
+					<li class="nav-item ml-4">
+						<a href="#portfolio" class="nav-link">Portfolio</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 
-		<header class="showcase bg-light">
+		<header id="home" class="showcase bg-light">
 			<div class="container">
 				<div class="showcase-content">
 					<h1 class="mb-5">Hello!</h1>
@@ -43,7 +58,13 @@
 			</div>
 		</header>
 
-		<section class="background py-5">
+		<section
+			id="background"
+			class="background py-5"
+			data-aos="fade-in"
+			data-aos-offset="250"
+			data-aos-once="true"
+		>
 			<div class="container py-5">
 				<div class="row">
 					<div class="col-md-3 mr-5">
@@ -81,9 +102,14 @@
 			</div>
 		</section>
 
-		<section class="skills py-5">
+		<section id="skills" class="skills bg-light py-5">
 			<div class="container py-5">
-				<div class="row">
+				<div
+					class="row"
+					data-aos="fade-in"
+					data-aos-offset="100"
+					data-aos-once="true"
+				>
 					<div class="col-md-3 mr-5">
 						<h6 class="section-title">SKILLS</h6>
 					</div>
@@ -98,17 +124,17 @@
 							</div>
 							<div class="col-md-4">
 								<h6 class="skill-category">frameworks</h6>
-								<p class="skill-item">Bootstrap</p>
-								<p class="skill-item">Materialize</p>
 								<p class="skill-item">React</p>
 								<p class="skill-item">Express</p>
+								<p class="skill-item">Bootstrap</p>
+								<p class="skill-item">Materialize</p>
 							</div>
 							<div class="col-md-4">
 								<h6 class="skill-category">tools</h6>
 								<p class="skill-item">Git & Github</p>
 								<p class="skill-item">Postman</p>
-								<p class="skill-item">Photoshop</p>
 								<p class="skill-item">MongoDB</p>
+								<p class="skill-item">Photoshop</p>
 							</div>
 						</div>
 					</div>
@@ -116,22 +142,114 @@
 			</div>
 		</section>
 
-		<section class="skills py-5">
+		<section id="portfolio" class="portfolio py-5">
 			<div class="container py-5">
-				<div class="row">
+				<div
+					class="row py-5 mb-5"
+					data-aos="fade-in"
+					data-aos-offset="250"
+					data-aos-once="true"
+				>
 					<div class="col-md-3 mr-5">
 						<h6 class="section-title">PORTFOLIO</h6>
 					</div>
 					<div class="col-md-7">
+						<a
+							class="project-title"
+							href="https://mongogin.herokuapp.com/home"
+							target="_blank"
+							>MongoGin
+							<i class="fas fa-arrow-circle-right primary-text"></i
+						></a>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Aperiam reprehenderit consequuntur placeat doloribus
-							eveniet iste enim, aut vero, dolor distinctio nemo
-							perferendis pariatur neque nihil, ea dolorem tempore
-							blanditiis libero tempora facilis voluptas ab accusantium.
-							Harum, enim molestias labore dolore consequuntur, et itaque
-							modi autem explicabo animi quam molestiae voluptatibus!
+							A contact management app is a fullstack web application
+							made with the MERN (MongoGin, Express, React, Node) Stack.
 						</p>
+						<div class="mb-5">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-primary">CSS</div>
+							<div class="badge badge-primary">JavaScript</div>
+							<div class="badge badge-primary">Bootstrap</div>
+							<div class="badge badge-primary">React</div>
+							<div class="badge badge-primary">Node.js</div>
+							<div class="badge badge-primary">Express</div>
+							<div class="badge badge-primary">MongoDB</div>
+						</div>
+						<img
+							class="img-fluid"
+							src="./assets/img/mongogin.png"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div
+					class="row py-5 mb-5"
+					data-aos="fade-in"
+					data-aos-offset="250"
+					data-aos-once="true"
+				>
+					<div class="col-md-3 mr-5">
+						<h6 class="section-title invisible">PORTFOLIO</h6>
+					</div>
+					<div class="col-md-7">
+						<a
+							class="project-title"
+							href="https://coronadot.netlify.app/"
+							target="_blank"
+							>CoronaDot
+							<i class="fas fa-arrow-circle-right primary-text"></i
+						></a>
+						<p>
+							CoronaDot is a web application that tracks the current
+							Covid-19 cases all over the globe.
+						</p>
+						<div class="mb-5">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-primary">CSS</div>
+							<div class="badge badge-primary">JavaScript</div>
+							<div class="badge badge-primary">Bootstrap</div>
+							<div class="badge badge-primary">React</div>
+							<div class="badge badge-primary">API</div>
+						</div>
+						<img
+							class="img-fluid"
+							src="./assets/img/coronadot.png"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div
+					class="row py-5 mb-5"
+					data-aos="fade-in"
+					data-aos-offset="250"
+					data-aos-once="true"
+				>
+					<div class="col-md-3 mr-5">
+						<h6 class="section-title invisible">PORTFOLIO</h6>
+					</div>
+					<div class="col-md-7">
+						<a
+							class="project-title"
+							href="https://bt-shoes.netlify.app/"
+							target="_blank"
+							>BT Shoes
+							<i class="fas fa-arrow-circle-right primary-text"></i
+						></a>
+						<p>
+							BT Shoes is a shoe ecommerce web design with clean
+							minimalistic design.
+						</p>
+						<div class="mb-5">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-primary">CSS</div>
+							<div class="badge badge-primary">JavaScript</div>
+							<div class="badge badge-primary">Bootstrap</div>
+						</div>
+						<img
+							class="img-fluid"
+							src="./assets/img/bt-shoes.png"
+							alt=""
+						/>
 					</div>
 				</div>
 			</div>
@@ -158,6 +276,7 @@
 			integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script src="./js/app.js"></script>
 	</body>
 </html>
