@@ -98,10 +98,10 @@ h3 {
 	text-transform: uppercase;
 }
 
-.project-title:hover i {
+/* .project-title:hover i {
 	margin-left: 0.5rem;
 	transition: 0.25s;
-}
+} */
 
 .skill-item {
 	margin-bottom: 0;
